@@ -111,5 +111,21 @@ export class AppModule { }
 
 ## Check: Add full list of components to material.module
 
+## Check: Add FormsModule
+* ```import { FormsModule } from '@angular/forms';```
+
+## Check: Add SCSS
+* via angular.json
+```
+"projects:{
+    "schematics": {
+        "@schematics/angular:component": {
+            "styleext": "scss"
+        }
+    }
+}
+```
+
+
 
 
