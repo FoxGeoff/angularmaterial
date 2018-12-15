@@ -50,3 +50,50 @@ import {MatButtonModule, MatCheckboxModule} from  '@angular/material';
     MatCheckboxModule,
   ],
 ```
+
+## Check: Improved Angular Material Code handling
+* Run: ```ng g m shared/material --dry-run --flat```
+* update material.module
+```
+import { NgModule } from '@angular/core';
+import {MatButtonModule, MatCheckboxModule} from  '@angular/material';
+
+@NgModule({
+  imports: [
+    MatButtonModule,
+    MatCheckboxModule,
+  ],
+  exports: [
+    MatButtonModule,
+    MatCheckboxModule,
+  ]
+})
+export class MaterialModule { }
+```
+* update app.module:
+```
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { AppComponent } from './app.component';
+import { MaterialModule } from './shared/material.module';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+* Most components require a theme:
+```@import "~@angular/material/prebuilt-themes/indigo-pink.css";```
+* check run: add button ```<button mat-button>Click me!</button>```
+
