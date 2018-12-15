@@ -109,5 +109,7 @@ export class AppModule { }
 * Ref.: https://material.angular.io/guides
 * Ref.: https://material.angular.io
 
+## Check: Add full list of components to material.module
+
 
 
