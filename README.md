@@ -101,3 +101,13 @@ export class AppModule { }
 * Run: ```npm install --save hammerjs```
 * update "main.ts ```import 'hammerjs;' ```
 
+## Check: Add material icons
+* in index.html 
+```<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">```
+* Add to material.module ``` MatIconModule ... imports: MatIconModule ...exports: MatIconModule ```
+* Run server to check
+* Ref.: https://material.angular.io/guides
+* Ref.: https://material.angular.io
+
+
+
