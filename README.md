@@ -97,3 +97,7 @@ export class AppModule { }
 ```@import "~@angular/material/prebuilt-themes/indigo-pink.css";```
 * check run: add button ```<button mat-button>Click me!</button>```
 
+## Check: Add Gesture support
+* Run: ```npm install --save hammerjs```
+* update "main.ts ```import 'hammerjs;' ```
+
