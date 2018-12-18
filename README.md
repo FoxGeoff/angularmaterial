@@ -126,6 +126,11 @@ export class AppModule { }
 }
 ```
 # Module # :Layout
+* Run: ``` ng g m demo/demo --flat --routing --dry-run ```
+* Run: ```ng g c demo/buttons --dry-run ```
+* Code: buttons.component (remove html from app.compoment and move to button.component)
+* use <router-outlet></router-outlet> (app.component)
+* Update: app.module
 
 
 
