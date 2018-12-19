@@ -125,7 +125,7 @@ export class AppModule { }
     }
 }
 ```
-# Module # :Layout
+# Module # :Layout -lazyload button
 * Run: ``` ng g m demo/demo --flat --routing --dry-run ```
 * Run: ```ng g c demo/buttons --dry-run ```
 * Code: buttons.component (remove html from app.compoment and move to button.component)
@@ -133,6 +133,57 @@ export class AppModule { }
 * Update: app.module move the material components to demo.module
 * Add: routes to demo-routing.module
 * Now test run check
+
+# Module # layout - Flexbox
+* Run ```ng g c demo/flexbox ```
+* Add to demo-routing.module ```{ path: 'flex', coponent:'flexboxComponent } ```
+* Run ```npm install --save @angular/flex-layout```
+* Add: (in demo module)
+```
+import { FlexLayoutModule } from '@angular/flex-layout'; 
+...
+  FlexLayoutModule 
+``` 
+* Add html for flexbox component
+```
+<div class="flex-container">
+  <div class="flex-item">1</div>
+  <div class="flex-item">2</div>
+  <div class="flex-item">3</div>
+  <div class="flex-item">4</div>
+  <div class="flex-item">5</div>
+  <div class="flex-item">6</div>
+</div>
+```
+* Add css
+```
+.flex-container{
+    display: flex;
+   /* flex-flow: row wrap; */
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+@media all and (max-width:800px){
+    .flex-container{
+        justify-content: flex-start;
+    }
+}
+
+.flex-item{
+    width: 200px;
+    height: 150px;
+    background: tomato;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    line-height: 150px;
+    margin-top: 5px;
+}
+```
+* Additional ```<div class="flex-container" fxLayout.xs="columns"> ```
 
 
 
