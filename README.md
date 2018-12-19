@@ -130,7 +130,9 @@ export class AppModule { }
 * Run: ```ng g c demo/buttons --dry-run ```
 * Code: buttons.component (remove html from app.compoment and move to button.component)
 * use <router-outlet></router-outlet> (app.component)
-* Update: app.module
+* Update: app.module move the material components to demo.module
+* Add: routes to demo-routing.module
+* Now test run check
 
 
 
