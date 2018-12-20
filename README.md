@@ -187,12 +187,23 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 ## Contact Manager Layout
 
+# Check: Add Contact Manager layout components with their module
+
 * Add (folder: contactmanger): contactmanager.module, contactmanager.component,toolbar.component, sidenav component
 * Run: ```ng g m contactmanager```
 * Run ``` ng g c contactmanager/contactmanager-app --flat --module contactmanager  --dry-run```
 * Run: ```ng g c contactmanager/components/toolbar --dry-run ```
 * Run: ```ng g c contactmanager/components/main-content```
 * Run:``` ng g c contactmanager/components/sidenav```
+
+# Check: Add to app.module lazyloading of contactmanager module.
+```
+const routes: Routes = [
+  { path: 'demo', loadChildren: './demo/demo.module#DemoModule'},
+  { path: 'contactmanager', loadChildren: './contactmanager/contactmanager.module#ContactmanagerModule'},
+  { path: '**', redirectTo: 'demo'},
+]
+```
 
 
 
