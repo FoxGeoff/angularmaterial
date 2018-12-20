@@ -201,10 +201,42 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 const routes: Routes = [
   { path: 'demo', loadChildren: './demo/demo.module#DemoModule'},
   { path: 'contactmanager', loadChildren: './contactmanager/contactmanager.module#ContactmanagerModule'},
-  { path: '**', redirectTo: 'demo'},
+  { path: '**', redirectTo: 'contactmanager'},
 ]
 ```
+# Check: add default path to Contactmanager Module
 
+* Routes:
+```
+...
+import { MaterialModule } from './../shared/material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule } from '@angular/forms';
+...
+@NgModule({
+  imports: [
+    CommonModule,
+    MaterialModule,
+    FlexLayoutModule,
+    FormsModule,
+    RouterModle.for(child),
+  ],
+
+```
+## Check Fix ERROR: Run: to update to version 7.x.x
+* Run:
+```
+npm uninstall -g angular-cli
+npm cache clean or npm cache verify (if npm > 5)
+npm install -g @angular/cli@latest
+```
+* Run on local project:
+```
+rm -rf node_modules ( just delete node_modules floder)
+npm uninstall --save-dev angular-cli
+npm install --save-dev @angular/cli@latest
+npm install
+ng update @angular/cli @angular/core --save
 
 
 
