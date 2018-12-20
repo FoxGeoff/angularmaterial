@@ -185,6 +185,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 ```
 * Additional ```<div class="flex-container" fxLayout.xs="columns"> ```
 
+## Contact Manager Layout
+
+* Add (folder: contactmanger): contactmanager.module, contactmanager.component,toolbar.component, sidenav component
+* Run: ```ng g m contactmanager```
+* Run ``` ng g c contactmanager/contactmanager-app --flat --module contactmanager  --dry-run```
+* Run: ```ng g c contactmanager/components/toolbar --dry-run ```
+* Run: ```ng g c contactmanager/components/main-content```
+* Run:``` ng g c contactmanager/components/sidenav```
+
 
 
 
