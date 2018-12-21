@@ -237,6 +237,29 @@ npm uninstall --save-dev angular-cli
 npm install --save-dev @angular/cli@latest
 npm install
 ng update @angular/cli @angular/core --save
+```
+
+## Check: Configure Sidenav
+* code (angular mataerial example):
+```
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="over" #sidenav  >Drawer content</mat-drawer>
+  <mat-drawer-content> 
+    <app-toolbar></app-toolbar>
+    <router-outlet></router-outlet>
+    <button type="button" mat-button (click) = "sidenav.toggle()">toggle</button>
+  </mat-drawer-content>
+</mat-drawer-container>
+```
+* CSS:
+```
+.example-container {
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid #555;
+  }
+```
 
 
 
