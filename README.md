@@ -261,5 +261,12 @@ ng update @angular/cli @angular/core --save
   }
 ```
 
+## Check: Add sidenav content
+
+* Add toolbar to sidebar
+* Add list to sidebar
+* HOW TO DETECT BREAKPOINTS https://alligator.io/angular/breakpoints-angular-cdk/
+
+
 
 

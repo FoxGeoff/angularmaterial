@@ -1,8 +1,16 @@
 <mat-drawer-container class="mat-drawer-container">
-  <mat-drawer class="mat-drawer"  mode="over" #sidenav  >Drawer content</mat-drawer>
-  <mat-drawer-content class="mat-drawer-content"> 
+  <mat-drawer class="mat-drawer mat-elevation-z10" #sidenav [opened]="!isScreenSmall()" [mode]="isScreenSmall() ? 'over' : 'side'">
+
+    <mat-toolbar color="primary">My Contacts</mat-toolbar>
+    <mat-list role="list">
+      <mat-list-item role="listitem">Item 1</mat-list-item>
+      <mat-list-item role="listitem">Item 2</mat-list-item>
+      <mat-list-item role="listitem">Item 3</mat-list-item>
+    </mat-list>
+  </mat-drawer>
+  <mat-drawer-content class="mat-drawer-content">
     <app-toolbar></app-toolbar>
     <router-outlet></router-outlet>
-    <button type="button" mat-button (click) = "sidenav.toggle()">toggle</button>
+    <button type="button" mat-button (click)="sidenav.toggle()">toggle</button>
   </mat-drawer-content>
 </mat-drawer-container>
