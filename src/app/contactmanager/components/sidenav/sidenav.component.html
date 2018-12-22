@@ -9,8 +9,8 @@
     </mat-list>
   </mat-drawer>
   <mat-drawer-content class="mat-drawer-content">
-    <app-toolbar></app-toolbar>
+    <app-toolbar (toggleSidenav) = "sidenav.toggle()" ></app-toolbar>     
     <router-outlet></router-outlet>
-    <button type="button" mat-button (click)="sidenav.toggle()">toggle</button>
+    <button mat-button (click)= "sidenav.toggle()">open</button>
   </mat-drawer-content>
 </mat-drawer-container>

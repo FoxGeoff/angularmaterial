@@ -267,6 +267,9 @@ ng update @angular/cli @angular/core --save
 * Add list to sidebar
 * HOW TO DETECT BREAKPOINTS https://alligator.io/angular/breakpoints-angular-cdk/
 
+## Check: Create a toggle button on the tool bar
+* ----
+
 
 
 
