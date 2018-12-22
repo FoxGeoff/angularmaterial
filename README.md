@@ -268,7 +268,18 @@ ng update @angular/cli @angular/core --save
 * HOW TO DETECT BREAKPOINTS https://alligator.io/angular/breakpoints-angular-cdk/
 
 ## Check: Create a toggle button on the tool bar
-* ----
+*  Add CSS to show/hide button
+```
+.sidenav-toggle {
+    display: none;  
+}
+@media (max-width: 500px) {
+    .sidenav-toggle{
+        display: flex;
+    }   
+}
+```
+* Add a Matrial Card
 
 
 
