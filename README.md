@@ -299,6 +299,10 @@ All working ready for next steps
 * Code user service
 * expose data with component sidenav to get user list
 
+## Check: display user names in sideNav component
+* check on the Material website the list component
+* Change out to the Navigation List Component
+
 
 
 
