@@ -282,8 +282,22 @@ ng update @angular/cli @angular/core --save
 * Add a Matrial Card
 All working ready for next steps
 
+## Check Add user service (http data reader)
 * Data url: https://angular-material-api.azurewebsites.net/users
-*
+* Run: ``` ng g s contactmanager/services/user --dry-run ```
+* "provide" this service" in the contactmanger.module
+```
+ providers: [
+    UserService,
+  ],
+```
+* model the data structure:
+* Run: ```ng g class contactmanager/models/note--dry-run ```
+* Run: ```ng g class contactmanager/models/user --dry-run ```
+* Add httpClient:
+* Add to module: HttpClientModule
+* Code user service
+* expose data with component sidenav to get user list
 
 
 
