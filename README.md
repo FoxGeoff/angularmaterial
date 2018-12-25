@@ -280,7 +280,7 @@ ng update @angular/cli @angular/core --save
 }
 ```
 * Add a Matrial Card
-All working read for next steps
+All working ready for next steps
 
 
 
