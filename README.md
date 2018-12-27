@@ -307,6 +307,16 @@ All working ready for next steps
 * Register with MatIconRegistry (allows SVG Icons to be assoiated with svg urls)
 * add SVG icons to the assets file: https://github.com/ajtowf/angularmaterial/
 * source: assets/avatars.svg
+* One time load MatIconRegistry and DomSanitizer
+```
+//contactmanager-app-compontent
+...
+constructor( iconRegisty: MatIconRegistry, sanitizer: DomSanitizer) {
+    iconRegisty.addSvgIconSet(
+      sanitizer.bypassSecurityTrustResourceUrl('assets/avatars.svg')
+    );
+   }
+```
 
 
 
