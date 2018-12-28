@@ -3,6 +3,7 @@ import { BreakpointState, BreakpointObserver } from '@angular/cdk/layout';
 import { UserService } from '../../services/user.service';
 import { Observable } from 'rxjs';
 import { User } from '../../models/user';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidenav',
@@ -13,7 +14,7 @@ export class SidenavComponent implements OnInit {
   smallWidthBreakpoint: boolean;
   users: Observable<User[]>;
 
-  constructor(public breakpointObserver: BreakpointObserver, private userService:UserService) { }
+  constructor(public breakpointObserver: BreakpointObserver, private userService:UserService, private router: Router) { }
 
   ngOnInit() {
     // make layout responsive
@@ -34,6 +35,12 @@ export class SidenavComponent implements OnInit {
       //debug code
       this.users.subscribe(data => {
         console.log(data);
+      })
+
+      this.users.subscribe(data => {
+        if (data.length > 0) {
+          this.router.navigate(['/contactmanager', data[0].id]);
+        }
       })
 
   }

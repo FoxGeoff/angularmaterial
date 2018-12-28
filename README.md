@@ -322,6 +322,8 @@ constructor( iconRegisty: MatIconRegistry, sanitizer: DomSanitizer) {
 
 ## Check: Add details on a mat-card
 
+## Check: Fix loading icon display
+
 
 
 
