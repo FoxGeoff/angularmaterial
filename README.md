@@ -326,9 +326,10 @@ constructor( iconRegisty: MatIconRegistry, sanitizer: DomSanitizer) {
 
 ## Check: On smallscreen close the sidebar after user select
 
-##Check: Introducing Tabs
+## Check: Introducing Tabs
 * Add to main-container component
 
-
+# Using Data Tables
+* Run: ``` ng g c contactmanager\components\notes --dry-run ```
 
 
