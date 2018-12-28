@@ -331,5 +331,6 @@ constructor( iconRegisty: MatIconRegistry, sanitizer: DomSanitizer) {
 
 # Using Data Tables
 * Run: ``` ng g c contactmanager\components\notes --dry-run ```
+* From docs copy/paste html and css
 
 
