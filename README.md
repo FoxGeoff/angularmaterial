@@ -330,7 +330,12 @@ constructor( iconRegisty: MatIconRegistry, sanitizer: DomSanitizer) {
 * Add to main-container component
 
 # Using Data Tables
+
+## Check: Add Mat Data Table
 * Run: ``` ng g c contactmanager\components\notes --dry-run ```
 * From docs copy/paste html and css
+
+## Check: Add Mat Pagination
+* From Docs (check code on live demo too)
 
 
