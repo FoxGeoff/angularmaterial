@@ -326,6 +326,9 @@ constructor( iconRegisty: MatIconRegistry, sanitizer: DomSanitizer) {
 
 ## Check: On smallscreen close the sidebar after user select
 
+##Check: Introducing Tabs
+* Add to main-container component
+
 
 
 
