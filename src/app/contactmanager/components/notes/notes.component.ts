@@ -16,12 +16,17 @@ export class NotesComponent implements OnInit {
 
   constructor() { }
 
-  ngAfterViewInit(){
+  ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
   }
 
   ngOnInit() {
     this.dataSource = new MatTableDataSource<Note>(this.notes);
+  }
+
+  applyFilter(filterValue: string) {
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+    this.dataSource.filter = filterValue;
   }
 
 }

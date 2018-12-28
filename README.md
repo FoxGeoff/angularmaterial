@@ -338,4 +338,6 @@ constructor( iconRegisty: MatIconRegistry, sanitizer: DomSanitizer) {
 ## Check: Add Mat Pagination
 * From Docs (check code on live demo too)
 
+## Check: Add Mat Filtering
+
 
