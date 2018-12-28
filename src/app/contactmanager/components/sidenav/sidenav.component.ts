@@ -39,12 +39,6 @@ export class SidenavComponent implements OnInit {
       console.log(data);
     })
 
-    this.users.subscribe(data => {
-      if (data.length > 0) {
-        this.router.navigate(['/contactmanager', data[0].id]);
-      }
-    })
-
     this.router.events.subscribe(() => {
       if (this.smallWidthBreakpoint) {
         console.log('Selection made on Smallscreen, close side bar');
