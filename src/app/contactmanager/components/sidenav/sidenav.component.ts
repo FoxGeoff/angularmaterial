@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { BreakpointState, BreakpointObserver } from '@angular/cdk/layout';
 import { UserService } from '../../services/user.service';
 import { Observable } from 'rxjs';
 import { User } from '../../models/user';
 import { Router } from '@angular/router';
+import { MatSidenav, MatDrawer } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-sidenav',
@@ -13,6 +14,7 @@ import { Router } from '@angular/router';
 export class SidenavComponent implements OnInit {
   smallWidthBreakpoint: boolean;
   users: Observable<User[]>;
+  @ViewChild(MatDrawer) sidenav: MatDrawer;
 
   constructor(public breakpointObserver: BreakpointObserver, private userService:UserService, private router: Router) { }
 
@@ -40,6 +42,13 @@ export class SidenavComponent implements OnInit {
       this.users.subscribe(data => {
         if (data.length > 0) {
           this.router.navigate(['/contactmanager', data[0].id]);
+        }
+      })
+
+      this.router.events.subscribe( () => {
+        if(this.isScreenSmall) {
+          console.log('Selection made on Smallscreen, close side bar');
+          this.sidenav.close();
         }
       })
 

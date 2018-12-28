@@ -324,6 +324,8 @@ constructor( iconRegisty: MatIconRegistry, sanitizer: DomSanitizer) {
 
 ## Check: Fix loading icon display
 
+## Check: On smallscreen close the sidebar after user select
+
 
 
 
