@@ -31,10 +31,10 @@ export class SidenavComponent implements OnInit {
           this.smallWidthBreakpoint = true;
         }
       });
-    // Display user list from the internal store
+    // display user list from the internal store
     this.users = this.userService.users;
     this.userService.LoadAll();
-    //debug code
+    
     this.users.subscribe(data => {
       console.log(data);
     })
