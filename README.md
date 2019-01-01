@@ -342,4 +342,9 @@ constructor( iconRegisty: MatIconRegistry, sanitizer: DomSanitizer) {
 
 ## Check: Add Mat Header Sorting
 
+# Module # Dialogs and Popups
+
+## Check: Add a basic dialog
+* Add button to toolbar to open dailog
+
 
