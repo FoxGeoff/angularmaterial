@@ -13,6 +13,7 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { Routes, RouterModule } from '@angular/router';
 import { UserService } from './services/user.service';
 import { NotesComponent } from './components/notes/notes.component';
+import { NewContactDialogComponent } from './components/new-contact-dialog/new-contact-dialog.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,7 @@ const routes: Routes = [
   providers: [
     UserService,
   ],
-  declarations: [ContactmanagerAppComponent, ToolbarComponent, MainContentComponent, SidenavComponent, NotesComponent]
+  declarations: [ContactmanagerAppComponent, ToolbarComponent, MainContentComponent, SidenavComponent, NotesComponent, NewContactDialogComponent],
+  entryComponents:[NewContactDialogComponent,]
 })
 export class ContactmanagerModule { }
