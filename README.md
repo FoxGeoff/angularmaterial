@@ -349,4 +349,5 @@ constructor( iconRegisty: MatIconRegistry, sanitizer: DomSanitizer) {
 * Add dailog
 * Add to module: ```entryComponents:[NewContactDialogComponent,]```
 * Add dialogRef and form
+## Check: Customize the form
 
