@@ -362,4 +362,6 @@ constructor( iconRegisty: MatIconRegistry, sanitizer: DomSanitizer) {
     For more information on this, see our API docs here:
     https://angular.io/api/forms/FormControlDirective#use-with-ngmodel
 ```    
-## Check: Add Datepick
+## Check: Add Datepicker
+
+## CHeck: Save Contact
