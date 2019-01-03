@@ -351,7 +351,7 @@ constructor( iconRegisty: MatIconRegistry, sanitizer: DomSanitizer) {
 * Add dialogRef and form
 ## Check: Customize the form
 
-##Check: Add Form Validation
+## Check: Add Form Validation
 * NOTE:
 ```
     It looks like you're using ngModel on the same form field as formControl. 
@@ -362,4 +362,4 @@ constructor( iconRegisty: MatIconRegistry, sanitizer: DomSanitizer) {
     For more information on this, see our API docs here:
     https://angular.io/api/forms/FormControlDirective#use-with-ngmodel
 ```    
-
+## Check: Add Datepick
