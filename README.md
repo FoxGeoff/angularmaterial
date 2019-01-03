@@ -351,3 +351,15 @@ constructor( iconRegisty: MatIconRegistry, sanitizer: DomSanitizer) {
 * Add dialogRef and form
 ## Check: Customize the form
 
+##Check: Add Form Validation
+* NOTE:
+```
+    It looks like you're using ngModel on the same form field as formControl. 
+    Support for using the ngModel input property and ngModelChange event with 
+    reactive form directives has been deprecated in Angular v6 and will be removed 
+    in Angular v7.
+    
+    For more information on this, see our API docs here:
+    https://angular.io/api/forms/FormControlDirective#use-with-ngmodel
+```    
+
