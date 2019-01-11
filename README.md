@@ -365,4 +365,4 @@ constructor( iconRegisty: MatIconRegistry, sanitizer: DomSanitizer) {
 ## Check: Add Datepicker
 
 ## Check: Save Contact
-* Code: new-dcontact-dialog.component
+* Code: new-contact-dialog.component
